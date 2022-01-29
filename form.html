@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Form Project.</title>
+</head>
+<body>
+
+    <div>
+        <h1 id="title">DEV Register.</h1>
+        <p id="subtitle">Type your info.</p>
+        <br>
+
+    </div>
+
+    <form>
+        <fieldset class="name">
+            <div>
+                <label>name</label>
+                <input type="text" name="name" id="name" required> 
+            </div>
+
+            <div class="nick">
+                <label>nickname</label>
+                <input type="text" name="nickname" id="nickname" required>
+            </div>
+        </fieldset>
+
+        <div class="email">
+            <label>email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label>Are You a Programmer?</label>
+            <label>
+                <input type="radio" name="devweb" value="frontend">Yes
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="frontend">No
+            </label>
+        </div>
+
+        <div>
+            <label>Level Knowledge.</label> 
+            <select id="level">
+                <option selected disabled value="">Select</option>
+                <option>Basic</option>
+                <option>Inter</option>
+                <option>Expert</option>
+            </select>
+        </div>
+
+        <fieldset class="textbox" id="checkbox">
+        <div id="check">
+            <label>Select the languages that you know</label><br>
+            <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+            <label for="tecnologia1">HTML</label>
+            <input type="checkbox" id="tecnologia2" name="tecnologia2" value="Javascript">
+            <label for="tecnologia2">Javascript</label>
+            <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Python">
+            <label for="tecnologia3">Python</label>
+            <input type="checkbox" id="tecnologia4" name="tecnologia4" value="C">
+            <label for="tecnologia4">C</label>
+            <input type="checkbox" id="tecnologia5" name="tecnologia5" value="Java">
+            <label for="tecnologia5">Java</label>
+        </div>  
+        </fieldset>
+
+        <div>
+            <br>
+            <label>Tell me more technologies that you know</label>
+            <br>
+            <textarea row="6" style="width: 26em" id="experience" name="experience"></textarea>
+        </div>
+        <button class="button" type="submit">Send</button>
+    </form>
+    
+</body>
+</html>
